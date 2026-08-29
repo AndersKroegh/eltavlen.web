@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privatlivspolitik — Eltavlen</title>
+<style>
+  :root{--bg:#ffffff;--ink:#14161a;--mut:#5b626e;--acc:#ff563c;--line:#e6e8ec;--card:#f7f8fa}
+  @media (prefers-color-scheme: dark){
+    :root{--bg:#0d0f13;--ink:#f2f4f7;--mut:#98a0ad;--acc:#ff6a52;--line:#232830;--card:#151920}
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       -webkit-text-size-adjust:100%}
+  .wrap{max-width:720px;margin:0 auto;padding:48px 22px 80px}
+  .eyebrow{color:var(--acc);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin:0 0 10px}
+  h1{font-size:clamp(28px,6vw,40px);line-height:1.12;letter-spacing:-.02em;margin:0 0 8px}
+  .sub{color:var(--mut);margin:0 0 34px}
+  h2{font-size:18px;letter-spacing:-.01em;margin:38px 0 10px;padding-top:18px;border-top:1px solid var(--line)}
+  p{margin:0 0 14px}
+  ul{margin:0 0 14px;padding-left:20px}
+  li{margin:0 0 8px}
+  .lead{font-size:18px;font-weight:500;background:var(--card);border:1px solid var(--line);
+        border-radius:14px;padding:18px 20px;margin:0 0 28px}
+  code{background:var(--card);border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-size:.9em}
+  a{color:var(--acc)}
+  footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);color:var(--mut);font-size:13px}
+  .en{color:var(--mut);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Eltavlen</p>
+  <h1>Privatlivspolitik</h1>
+  <p class="sub">Gældende fra 21. august 2026</p>
+
+  <p class="lead">Eltavlen indsamler ingen personoplysninger. Der er ingen konto, ingen server
+  og ingen sporing. Alt hvad appen henter, bliver på din telefon.</p>
+
+  <h2>Hvad appen gemmer — kun på din enhed</h2>
+  <ul>
+    <li>Dit ElOverblik-token, gemt i iOS' Nøglering (Keychain).</li>
+    <li>Dit elforbrug og dine tariffer, hentet med dit eget token og gemt lokalt.</li>
+    <li>Dine indstillinger: prisområde, elaftale, udseende og notifikationer.</li>
+  </ul>
+  <p>Intet af det forlader telefonen, og udvikleren har ingen adgang til det. Sletter du appen,
+  slettes det hele med den. Du kan når som helst fjerne dit token under Indstillinger, og du kan
+  altid slette selve token'et på <a href="https://eloverblik.dk">eloverblik.dk</a>.</p>
+
+  <h2>Hvem appen taler med</h2>
+  <ul>
+    <li><code>api.eloverblik.dk</code> — Energinets ElOverblik. Kontaktes kun, hvis du selv har
+    indsat et token. Appen henter dit forbrug, dine tariffer og dine afgifter.</li>
+    <li><code>api.energidataservice.dk</code> — Energinets åbne data. Henter spotpriser,
+    CO₂-udledning og status for elsystemet. Disse kald indeholder ingen oplysninger om dig —
+    kun hvilket prisområde og hvilken dato der ønskes.</li>
+  </ul>
+  <p>Der er ingen analyseværktøjer, ingen reklame-SDK'er, ingen tredjeparts-sporing og ingen
+  crash-rapportering til tredjepart. Appen beder ikke om tilladelse til at spore dig på tværs af
+  apps og websteder.</p>
+
+  <h2>Dine rettigheder</h2>
+  <ul>
+    <li>Da udvikleren ikke behandler dine personoplysninger, er der ingen data at anmode om
+    indsigt i, rette eller få slettet hos os.</li>
+    <li>Dine data hos Energinet er omfattet af Energinets egen privatlivspolitik. Henvend dig til
+    Energinet om dem.</li>
+  </ul>
+
+  <h2>Notifikationer</h2>
+  <p>Notifikationer er lokale og laves på selve telefonen. Der bruges ingen push-server, og der
+  sendes ingen data ud af enheden.</p>
+
+  <h2>Køb</h2>
+  <p>Køber du Eltavlen Premium, håndteres betalingen af Apple via App Store. Udvikleren modtager
+  ingen betalingsoplysninger og kan ikke se, hvem der har købt. Apples egen privatlivspolitik
+  gælder for selve betalingen.</p>
+
+  <h2>Børn</h2>
+  <p>Appen er ikke rettet mod børn og indsamler ingen oplysninger fra nogen, uanset alder.</p>
+
+  <h2>Ændringer</h2>
+  <p>Ændres politikken, opdateres denne side og teksten inde i appen, og datoen øverst rettes.</p>
+
+  <h2>Kontakt</h2>
+  <p>Anders Krøgh Jørgensen · <a href="mailto:anderskroegh@gmail.com">anderskroegh@gmail.com</a></p>
+
+  <h2>Summary in English</h2>
+  <p class="en">Eltavlen collects no personal data. There is no account, no backend server and no
+  tracking or analytics of any kind. Your Danish electricity data is fetched with a token you
+  create yourself at eloverblik.dk, stored in the iOS Keychain, and kept on your device only.
+  Requests to Energinet's open data API (spot prices, CO₂ intensity, grid status) contain no
+  information about you. Deleting the app deletes everything. Contact:
+  anderskroegh@gmail.com</p>
+
+  <footer>Eltavlen er en uafhængig app og er hverken tilknyttet, sponsoreret eller godkendt af
+  Energinet, ElOverblik, dit netselskab eller dit elselskab.</footer>
+</div>
+</body>
+</html>

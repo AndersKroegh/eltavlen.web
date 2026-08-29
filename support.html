@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Eltavlen</title>
+<style>
+  :root{--bg:#ffffff;--ink:#14161a;--mut:#5b626e;--acc:#ff563c;--line:#e6e8ec;--card:#f7f8fa}
+  @media (prefers-color-scheme: dark){
+    :root{--bg:#0d0f13;--ink:#f2f4f7;--mut:#98a0ad;--acc:#ff6a52;--line:#232830;--card:#151920}
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       -webkit-text-size-adjust:100%}
+  .wrap{max-width:720px;margin:0 auto;padding:48px 22px 80px}
+  .eyebrow{color:var(--acc);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin:0 0 10px}
+  h1{font-size:clamp(28px,6vw,40px);line-height:1.12;letter-spacing:-.02em;margin:0 0 8px}
+  .sub{color:var(--mut);margin:0 0 34px}
+  h2{font-size:18px;letter-spacing:-.01em;margin:34px 0 10px;padding-top:18px;border-top:1px solid var(--line)}
+  h3{font-size:15px;margin:20px 0 6px}
+  p{margin:0 0 14px}
+  ol,ul{margin:0 0 14px;padding-left:20px}
+  li{margin:0 0 8px}
+  .lead{font-size:18px;font-weight:500;background:var(--card);border:1px solid var(--line);
+        border-radius:14px;padding:18px 20px;margin:0 0 28px}
+  a{color:var(--acc)}
+  footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);color:var(--mut);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Eltavlen</p>
+  <h1>Support</h1>
+  <p class="sub">Hjælp til den danske elpris-app</p>
+
+  <p class="lead">Skriv til <a href="mailto:anderskroegh@gmail.com">anderskroegh@gmail.com</a>,
+  hvis du er kørt fast. Send gerne en beskrivelse af, hvad du gjorde, og hvad du så.</p>
+
+  <h2>Kom i gang</h2>
+  <p>Appen virker med det samme uden opsætning: den viser spotprisen for dit prisområde,
+  CO₂-udledningen og elsystemets tilstand lige nu. Vil du se <em>dit eget</em> forbrug og din
+  faktiske pris, skal du tilføje et token fra ElOverblik.</p>
+
+  <h3>Sådan henter du dit token</h3>
+  <ol>
+    <li>Åbn <a href="https://eloverblik.dk">eloverblik.dk</a> og log ind med MitID (vælg “Privat”).</li>
+    <li>Tryk på dit navn øverst til højre, og vælg “Datadeling”.</li>
+    <li>Tryk “Opret token”. Det laver en nøgle, der er gyldig i 1 år.</li>
+    <li>Kopiér hele token-teksten — den er meget lang.</li>
+    <li>I appen: Indstillinger → DataHub-adgang → indsæt token → “Gem og hent data”.</li>
+  </ol>
+  <p>Token'et giver kun læseadgang til dine egne data, det gemmes i telefonens Nøglering, og du
+  kan altid slette det igen — både i appen og på eloverblik.dk.</p>
+
+  <h2>Ofte stillede spørgsmål</h2>
+
+  <h3>Hvorfor mangler dagens forbrug?</h3>
+  <p>Energinets DataHub er typisk 1–2 dage bagud. Appen viser derfor den seneste dag, hvor der
+  faktisk <em>er</em> data, og skriver ærligt hvilken dag det er.</p>
+
+  <h3>Hvorfor står der “Kun spot” eller “Estimeret”?</h3>
+  <p>“Kun spot” betyder, at du ikke har tilføjet et token endnu, så kun den rå markedspris kan
+  vises. “Estimeret” betyder, at tariffer og afgifter er hentet, men at dit elhandler-tillæg
+  mangler — det kan ikke hentes automatisk og skal indtastes under Indstillinger. Når det er
+  udfyldt, står der “Faktisk”.</p>
+
+  <h3>Passer prisen ikke med min regning?</h3>
+  <p>Tallene i appen er vejledende. Afvigelser skyldes typisk et manglende eller forkert
+  elhandler-tillæg, et abonnement appen ikke kender, eller at DataHub-data er forsinket. Din
+  regning fra elselskabet er den gældende.</p>
+
+  <h3>Er DK1 eller DK2 valgt forkert?</h3>
+  <p>Prisområdet udledes af postnummeret på dit målepunkt. Du kan altid overstyre det manuelt
+  under Indstillinger → Prisområde.</p>
+
+  <h3>Jeg får ingen notifikationer</h3>
+  <p>Tjek at notifikationer er slået til for Eltavlen i iOS' Indstillinger, og at de er
+  aktiveret inde i appen. Notifikationerne laves lokalt på telefonen og opdateres, når du åbner
+  appen.</p>
+
+  <h3>Hvordan gendanner jeg mit køb?</h3>
+  <p>Åbn Indstillinger i appen → “Få Eltavlen Premium” → “Gendan køb”. Køb er knyttet til din
+  Apple-konto og gælder alle dine enheder.</p>
+
+  <h3>Hvordan sletter jeg mine data?</h3>
+  <p>Fjern token'et under Indstillinger, eller slet appen — så er alt væk. Appen har ingen server,
+  så der ligger intet om dig nogen andre steder.</p>
+
+  <h2>Kontakt</h2>
+  <p>Anders Krøgh Jørgensen · <a href="mailto:anderskroegh@gmail.com">anderskroegh@gmail.com</a><br>
+  Svar kommer typisk inden for et par hverdage.</p>
+
+  <p><a href="privacy.html">Privatlivspolitik</a></p>
+
+  <footer>Eltavlen er en uafhængig app og er hverken tilknyttet, sponsoreret eller godkendt af
+  Energinet, ElOverblik, dit netselskab eller dit elselskab.</footer>
+</div>
+</body>
+</html>
