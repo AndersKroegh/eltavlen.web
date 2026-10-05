@@ -33,14 +33,15 @@
 <div class="wrap">
   <p class="eyebrow">Eltavlen</p>
   <h1>Privatlivspolitik</h1>
-  <p class="sub">Gældende fra 21. august 2026</p>
+  <p class="sub">Gældende fra 2. oktober 2026</p>
 
   <p class="lead">Eltavlen indsamler ingen personoplysninger. Der er ingen konto, ingen server
   og ingen sporing. Alt hvad appen henter, bliver på din telefon.</p>
 
   <h2>Hvad appen gemmer — kun på din enhed</h2>
   <ul>
-    <li>Dit ElOverblik-token, gemt i iOS' Nøglering (Keychain).</li>
+    <li>Dit ElOverblik-token og den adgangsnøgle, det veksles til hos ElOverblik (gyldig i et
+    døgn), gemt i iOS' Nøglering (Keychain).</li>
     <li>Dit elforbrug og dine tariffer, hentet med dit eget token og gemt lokalt.</li>
     <li>Dine indstillinger: prisområde, elaftale, udseende og notifikationer.</li>
   </ul>
@@ -53,11 +54,14 @@
     <li><code>api.eloverblik.dk</code> — Energinets ElOverblik. Kontaktes kun, hvis du selv har
     indsat et token. Appen henter dit forbrug, dine tariffer og dine afgifter.</li>
     <li><code>api.energidataservice.dk</code> — Energinets åbne data. Henter spotpriser,
-    CO₂-udledning og status for elsystemet. Disse kald indeholder ingen oplysninger om dig —
-    kun hvilket prisområde og hvilken dato der ønskes.</li>
+    CO₂-udledning og status for elsystemet. Kaldene indeholder kun hvilket prisområde og hvilken
+    dato der ønskes.</li>
     <li><code>itunes.apple.com</code> — Apples App Store. Tjekker om der er en nyere version af
-    Eltavlen. Kaldet indeholder kun appens id, ingen oplysninger om dig.</li>
+    Eltavlen. Kaldet indeholder kun appens id.</li>
   </ul>
+  <p>Som ved ethvert kald på internettet ser modtageren din IP-adresse. Energinet oplyser, at de
+  gemmer IP-adressen fra kald til Energi Data Service i 3 måneder til statistik over brugen. Det er
+  Energinet og Apple, der er ansvarlige for de oplysninger — ikke udvikleren, som aldrig ser dem.</p>
   <p>Der er ingen analyseværktøjer, ingen reklame-SDK'er, ingen tredjeparts-sporing og ingen
   crash-rapportering til tredjepart. Appen beder ikke om tilladelse til at spore dig på tværs af
   apps og websteder.</p>
@@ -92,8 +96,9 @@
   <p class="en">Eltavlen collects no personal data. There is no account, no backend server and no
   tracking or analytics of any kind. Your Danish electricity data is fetched with a token you
   create yourself at eloverblik.dk, stored in the iOS Keychain, and kept on your device only.
-  Requests to Energinet's open data API (spot prices, CO₂ intensity, grid status) contain no
-  information about you. Deleting the app deletes everything. Contact:
+  Requests to Energinet's open data API (spot prices, CO₂ intensity, grid status) contain only
+  the price area and dates; like any web request they reveal your IP address, which Energinet
+  states it keeps for 3 months for usage statistics. Deleting the app deletes everything. Contact:
   anderskroegh@gmail.com</p>
 
   <footer>Eltavlen er en uafhængig app og er hverken tilknyttet, sponsoreret eller godkendt af
