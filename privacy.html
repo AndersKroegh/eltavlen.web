@@ -33,10 +33,11 @@
 <div class="wrap">
   <p class="eyebrow">Eltavlen</p>
   <h1>Privatlivspolitik</h1>
-  <p class="sub">Gældende fra 2. oktober 2026</p>
+  <p class="sub">Gældende fra 6. oktober 2026</p>
 
-  <p class="lead">Eltavlen indsamler ingen personoplysninger. Der er ingen konto, ingen server
-  og ingen sporing. Alt hvad appen henter, bliver på din telefon.</p>
+  <p class="lead">Eltavlen har ingen konto og ingen sporing og gemmer ingen oplysninger om dig.
+  Alt hvad appen henter, bliver på din telefon. Den eneste server, udvikleren bruger, leverer
+  prisprognosen — se “Prognosen” nedenfor.</p>
 
   <h2>Hvad appen gemmer — kun på din enhed</h2>
   <ul>
@@ -58,6 +59,8 @@
     dato der ønskes.</li>
     <li><code>itunes.apple.com</code> — Apples App Store. Tjekker om der er en nyere version af
     Eltavlen. Kaldet indeholder kun appens id.</li>
+    <li><code>eltavlen-prognose.anderskroegh.workers.dev</code> (Cloudflare) — henter prisprognosen. Kaldet indeholder ingen
+    oplysninger om dig og heller ikke dit prisområde. Se “Prognosen”.</li>
   </ul>
   <p>Som ved ethvert kald på internettet ser modtageren din IP-adresse. Energinet oplyser, at de
   gemmer IP-adressen fra kald til Energi Data Service i 3 måneder til statistik over brugen. Det er
@@ -66,12 +69,31 @@
   crash-rapportering til tredjepart. Appen beder ikke om tilladelse til at spore dig på tværs af
   apps og websteder.</p>
 
+  <h2>Prognosen</h2>
+  <ul>
+    <li>Når du åbner prognosen, henter appen den fra Cloudflare, som er udviklerens
+    databehandler. Som ved ethvert kald på internettet ser Cloudflare din telefons IP-adresse og
+    det, telefonen selv sender med (appens version og iOS-version). Det er nødvendigt for at
+    sende prognosen til dig og bruges ikke til andet.</li>
+    <li>Grundlaget er udviklerens legitime interesse i at levere den funktion, du selv åbner
+    (GDPR art. 6, stk. 1, litra f).</li>
+    <li>Udvikleren gemmer ingen logs og har ingen adgang til din IP-adresse. Appen sender ingen
+    cookies eller id'er, og den samme fil hentes af alle, uanset prisområde. Appen spørger kun,
+    når der kan være kommet en ny prognose.</li>
+    <li>Cloudflare er en amerikansk virksomhed. Overførslen sker under EU-USA Data Privacy
+    Framework og ellers under EU's standardkontraktbestemmelser.</li>
+    <li>Prognosen indeholder ingen oplysninger om dig. Dit forbrug og dit ElOverblik-token sendes
+    aldrig til Cloudflare.</li>
+  </ul>
+
   <h2>Dine rettigheder</h2>
   <ul>
-    <li>Da udvikleren ikke behandler dine personoplysninger, er der ingen data at anmode om
-    indsigt i, rette eller få slettet hos os.</li>
+    <li>Udvikleren gemmer ingen oplysninger, der kan knyttes til dig, og kan derfor ikke finde
+    data om dig at give indsigt i, rette eller slette (GDPR art. 11).</li>
     <li>Dine data hos Energinet er omfattet af Energinets egen privatlivspolitik. Henvend dig til
     Energinet om dem.</li>
+    <li>Du kan altid klage til Datatilsynet,
+    <a href="https://www.datatilsynet.dk">datatilsynet.dk</a>.</li>
   </ul>
 
   <h2>Notifikationer</h2>
@@ -89,16 +111,21 @@
   <h2>Ændringer</h2>
   <p>Ændres politikken, opdateres denne side og teksten inde i appen, og datoen øverst rettes.</p>
 
-  <h2>Kontakt</h2>
+  <h2>Dataansvarlig og kontakt</h2>
   <p>Anders Krøgh Jørgensen · <a href="mailto:anderskroegh@gmail.com">anderskroegh@gmail.com</a></p>
 
   <h2>Summary in English</h2>
-  <p class="en">Eltavlen collects no personal data. There is no account, no backend server and no
-  tracking or analytics of any kind. Your Danish electricity data is fetched with a token you
+  <p class="en">Eltavlen has no account and no tracking or analytics of any kind, and the
+  developer keeps no personal data. Your Danish electricity data is fetched with a token you
   create yourself at eloverblik.dk, stored in the iOS Keychain, and kept on your device only.
   Requests to Energinet's open data API (spot prices, CO₂ intensity, grid status) contain only
   the price area and dates; like any web request they reveal your IP address, which Energinet
-  states it keeps for 3 months for usage statistics. Deleting the app deletes everything. Contact:
+  states it keeps for 3 months for usage statistics. The price forecast is fetched from
+  Cloudflare (the developer's processor), which sees your IP address in order to deliver it; no
+  logs are kept, no cookies or identifiers are sent, and the same file is served to everyone.
+  Legal basis: legitimate interest (GDPR Art. 6(1)(f)). Transfers to the US rely on the EU-US
+  Data Privacy Framework, with Standard Contractual Clauses as fallback. You may complain to the
+  Danish Data Protection Agency (datatilsynet.dk). Deleting the app deletes everything. Contact:
   anderskroegh@gmail.com</p>
 
   <footer>Eltavlen er en uafhængig app og er hverken tilknyttet, sponsoreret eller godkendt af
